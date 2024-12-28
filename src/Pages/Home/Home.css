@@ -1,0 +1,129 @@
+.home, .favourites{
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 20px;
+}
+.recipe{
+    width: 22vw;
+    min-width: 280px;
+    box-shadow: 1px 1px 5px rgb(0,0,0,0.25);
+    height: 26vw;
+    min-height: 380px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+
+
+
+}
+.recipe img{
+    width: 20vw;
+    height: 190px;
+    object-fit: cover;
+}
+.to-details{
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.recipe h3{
+    text-align: center;
+    font-weight: 500;
+    color: rgb(38, 38, 119);
+    font-size: 17px;
+}
+.recipe p, .first-message{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media(max-width:1024px){
+    .recipe{
+        width: 15vw;
+        min-width: 220px;
+    }
+    nav ul li{
+        padding-left: 2vw;
+    }
+    form input{
+        margin-left: 15px;
+    }
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+    .details img{
+        max-width: none;
+        min-width: none;
+        width: 70vw;
+    }
+    .description{
+        width: 70vw;
+    }
+    .logo{
+        padding: 10px 0;
+    }
+}
+@media(max-width:768px){
+    .recipe{
+        width: 75vw;
+        min-width: 280px;
+        gap: 3px;
+    }
+    .home, .favourites{
+        flex-direction: column;
+    }
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe img{
+        width: 65vw;
+        
+    }
+    .logo{
+        margin-left: 0;
+        font-size: 20px;
+        padding:10px 0;
+    }
+    nav input{
+        width: 40vw;
+        font-size: 13px;
+        margin-left: 3px;
+        margin-right: 3vw;
+    }
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: 57px;
+        background-color: black;
+        right: 0;
+        height: 100vh;
+        justify-content: start;
+        gap: 40px;
+        width: 0;
+        transition: all 0.4s ease;
+        
+    }
+    .show-me{
+        padding: 20px;
+        width: 40vw;
+
+    }
+    
+    .ham-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        font-size: 20px;
+    }
+}
